@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.card-img{
+    height:100vh;
+}
+
+.card-img-overlay{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+
+}
+
+.card-title{
+    font-size: 30px;
+}
+
+.card-text{
+    font-size: 16px;
+}
+/* about Styling */
+#about{
+    padding: 10px;
+    margin:40px 20px;
+}
+
+
+.a-right p{
+    margin-bottom: 2px;
+}
+
+.progress{
+    margin-bottom: 10px;
+}
+
+/* services styling */
+
+#services{
+    background: #333;
+    color: white;
+}
+
+#services h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#services h2::after{
+    content: ' ';
+    background:#fff;
+    display: block;
+    height: 3px;
+    width: 140px;
+    margin: 10px auto 7px;
+}
+
+.img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Signup styling */
+#sign-up{
+    margin:40px 0px;
+}
+
+.error{
+    color: red;
+}
+
+/* Footer */
+.footer{
+    padding:5px 0px;
+    
+}
+
+.f1, .f2{
+    margin: 2px;
+}
