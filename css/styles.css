@@ -114,6 +114,7 @@
     margin: 10px 0;
 }
 
+
 /* Footer */
 footer{
     color: white;
@@ -160,5 +161,9 @@ footer{
  .footer{
     padding-left: 20px;
  }
+ 
+.form-control{
+    width: 100%;
+}
 
  }
