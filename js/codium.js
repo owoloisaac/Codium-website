@@ -8,17 +8,26 @@
 const  btn = document.querySelector('#btn');
 
 btn.addEventListener('click', (e) => {
-    e.preventDefault();
+  e.preventDefault();
     
-    if(passwordInput.value === passwordInput2.value){
-
-        success.classList.add('alert' ,'alert-success', 'my-3')
-        success.innerHTML= 'You have successfully signed up'
-        setTimeout(() => success.remove(), 3000);
-    }else{
+   if(passwordInput.value.length === 0){
+        error.classList.add('error')
+        error.innerHTML= 'please input your password'
+        setTimeout(() => error.remove(), 3000);
+    }else if(passwordInput2.value.length === 0){
         error.classList.add('error')
         error.innerHTML= 'please confirm your password'
         setTimeout(() => error.remove(), 3000);
+    }else if(passwordInput.value != passwordInput2.value){
+        error.classList.add('error')
+        error.innerHTML= 'please confirm your password'
+        setTimeout(() => error.remove(), 3000);
+    }
+    else{
+        success.classList.add('alert')
+        success.classList.add('alert-success')
+        success.innerHTML= 'Thank you for signing into Codium!'
+        setTimeout(() => success.remove(), 3000);
     }
 })
 

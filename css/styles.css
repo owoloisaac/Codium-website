@@ -6,7 +6,11 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    
+}
 
+.back-img{
+    filter: brightness(60%);
 }
 
 .card-img{
@@ -50,6 +54,15 @@
 #courses{
     background: rgb(1, 162, 255);
     padding: 20px;
+}
+
+#courses .cmt::after{
+    content: ' ';
+    background:#000;
+    display: block;
+    height: 3px;
+    width: 240px;
+    margin: 10px auto 7px;
 }
 
 .bct{
@@ -97,6 +110,10 @@
     color: red;
 }
 
+#sign-up{
+    margin: 10px 0;
+}
+
 /* Footer */
 footer{
     color: white;
@@ -104,6 +121,10 @@ footer{
 
 .support{
     margin-top: 100px;
+}
+
+.footer{
+    padding-left: 40px;
 }
 
 .imgs{
@@ -114,13 +135,30 @@ footer{
 .f1, .f2{
     margin: 2px;
 }
-.imgw{
-    width: 40px;
+.imgj{
+    width: 80px;
     height: 40px;
 }
 
-#contact{
-    color: rgba(255, 255, 255, 0.973);
-}
+/* Media queries for small devices */
 
+@media (max-width: 767.98px) { 
+ .sut{
+     font-size:  35px;
+     margin-top: 10px;
+ }
+ .a-right-text{
+     margin-top: 18px;
+ }
+ .ft{
+    font-size:  40px;
+ }
+ .con-text{
+     font-size: 17px;
+ }
 
+ .footer{
+    padding-left: 20px;
+ }
+
+ }
