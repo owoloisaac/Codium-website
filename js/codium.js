@@ -7,6 +7,10 @@
 
 const  btn = document.querySelector('#btn');
 
+const year = document.querySelector("#year");
+year.innerHTML = new Date().getFullYear();
+year.classList.add('lead', 'f1');
+
 btn.addEventListener('click', (e) => {
   e.preventDefault();
     

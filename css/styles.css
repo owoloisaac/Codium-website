@@ -126,6 +126,7 @@ footer{
 
 .footer{
     padding-left: 40px;
+    font-size: 20px;
 }
 
 .imgs{
@@ -135,6 +136,7 @@ footer{
 
 .f1, .f2{
     margin: 2px;
+    font-size: 18px;
 }
 .imgj{
     width: 80px;
